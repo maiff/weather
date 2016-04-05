@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>weather</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="initial-scale=1,minimum-scale=1">
+	 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=2dRiX4suZu6Z5waQnRlkKWcQy4k2Ff7g"></script>
+</head>
+<body>
+<header>
+	<ul>
+		<li id="local"></li>
+		<li id="date-day"></li>
+		<li id="date-week"></li>
+	</ul>
+</header>
+<dl class="main">
+	<dt id="now-temperature"></dt>
+	<dd>
+		<div id="cond"></div>
+		<div id="range-tem"></div>
+	</dd>
+</dl>
+<div class="suggestion">
+	<dl id="cloth">
+		<dt>穿衣指数:</dt>
+		<dd id="drsg"></dd>
+	</dl>
+	<dl >
+		<dt>运动指数:</dt>
+		<dd id="sport"></dd>
+	</dl>
+</div>
+	
+</body>
+
+
+<script type="text/javascript" src="js/tool.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+ 
+
+</html>
