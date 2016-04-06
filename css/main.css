@@ -55,6 +55,22 @@ header ul li{
 	font-size: 0.7rem;
 }
 /* https://api.heweather.com/x3/weather?city=松江&key=0c064a3ef8f64d728f2f96a775808c82*/
+#se-for{
+	list-style: none;
+	overflow: hidden;
+	font-size: 0.5rem;
+	margin: 1.2rem 0 0 0.5rem ;
+}
+#se-for li{
+	float: left;
+	text-align: center;
+	width: 13%;
+	border-left:1px solid #fff; 
+}
+#se-for li:first-child{
+	border: none;
+}
+
 .suggestion{
 	font-size: 0.6rem;
 	position: absolute;

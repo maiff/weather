@@ -1,7 +1,7 @@
 var TOOL={
 	ajax:function(url, onsuccess){  
 	    var xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP'); //创建XMLHTTP对象，考虑兼容性。XHR  
-	    xmlhttp.open("POST", url, true); //“准备”向服务器的GetDate1.ashx发出Post请求（GET可能会有缓存问题）。这里还没有发出请求  
+	    xmlhttp.open("GET", url, true); //“准备”向服务器的GetDate1.ashx发出Post请求（GET可能会有缓存问题）。这里还没有发出请求  
 	  
 	    //DRY：不要复制粘贴代码  
 	    //AJAX是异步的，并不是等到服务器端返回才继续执行  
@@ -11,7 +11,7 @@ var TOOL={
 	        {  
 	            if (xmlhttp.status == 200) //如果Http状态码为200则是成功  
 	            {  
-	                onsuccess(xmlhttp.responseText);  
+	               onsuccess(xmlhttp.responseText);  
 	            }  
 	            else  
 	            {  
@@ -23,6 +23,7 @@ var TOOL={
 	    xmlhttp.send(); //这时才开始发送请求。并不等于服务器端返回。请求发出去了，我不等！去监听onreadystatechange吧！  
 	},
 	cityName:'',
+	count:0,
 	$:function(id){
 		return document.getElementById(id);
 	} 
